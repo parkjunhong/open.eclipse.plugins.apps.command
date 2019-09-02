@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration PUBLIC "log4j.dtd" "log4j.dtd" >
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+	<appender name="console" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<!-- <param name="ConversionPattern" value="(%d{hh시mm분ss초sss}) [%t] %5p 
+				[%25.25c] %m (%C{1}.java:%L) %n" /> -->
+			<param name="ConversionPattern" value="(%d{hh시mm분ss초sss}) [%t] %5p | %m (%C{1}.java:%L) %n" />
+		</layout>
+	</appender>
+
+	<appender name="file" class="org.apache.log4j.FileAppender">l
+		<param name="File" value="./xml_log.log" />
+		<param name="Append" value="false" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="(%d{hh시mm분ss초sss})\t[%t]\t%5p [%25.25c] %m%n" />
+		</layout>
+	</appender>
+
+	<appender name="error_log" class="org.apache.log4j.FileAppender">
+		<param name="File" value="./error_log.log" />
+		<param name="Append" value="true" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="(%d{hh시mm분ss초sss}) [%t] %5p [%25.25c] %m%n" />
+		</layout>
+	</appender>
+
+	<!-- 일반 출력용 최상위 로거 -->
+	<logger name="open.eclipse.plugins.apps.command" additivity="false">
+		<level value="INFO" />
+		<appender-ref ref="console" />
+	</logger>
+
+
+	<!-- 최상위 로거 -->
+	<root>
+		<level value="WARN" />
+		<appender-ref ref="console" />
+	</root>
+
+
+</log4j:configuration>
