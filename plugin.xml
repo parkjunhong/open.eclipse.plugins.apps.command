@@ -60,16 +60,6 @@
                   style="push">
             </command>
          </menu>
-         <menu
-               icon="icons/python_16x16.png"
-               label="PyDev Utils">
-            <command
-                  commandId="open.eclipse.plugins.apps.command.pydev.define_import_all_list"
-                  icon="icons/python_16x16.png"
-                  label="%command.python.define_import_all.label"
-                  style="push">
-            </command>
-         </menu>
       </menuContribution>ribution>
    </extension>
    <extension
@@ -118,11 +108,6 @@
             defaultHandler="open.eclipse.plugins.apps.command.commands.DeleteFilesHandler"
             id="open.eclipse.plugins.apps.command.commands.deletefiles"
             name="%command.deletefiled.name">
-      </command>
-      <command
-            defaultHandler="open.eclipse.plugins.apps.command.pydev.PyDevDefineImportAllHandler"
-            id="open.eclipse.plugins.apps.command.pydev.define_import_all_list"
-            name="%command.python.define_import_all.name">
       </command>
    </extension>
    <extension
