@@ -1,7 +1,7 @@
 /*
  * COPYLEFT by 'Open Commons' &  Park Jun-Hong All Rights Reserved.
  * 
- * This file is generated under this project, "open.eclipse.plugins.apps.terminal".
+ * This file is generated under this project, "open.eclipse.plugins.apps.command".
  *
  * Date  : 2012. 7. 12. 오후 8:17:01
  *

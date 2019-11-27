@@ -12,7 +12,7 @@ import org.osgi.framework.BundleContext;
 public class CommandHereActivator extends AbstractUIPlugin {
 
 	// The plug-in ID
-	public static final String PLUGIN_ID = "open.eclipse.plugins.apps.terminal"; //$NON-NLS-1$
+	public static final String PLUGIN_ID = "open.eclipse.plugins.apps.command"; //$NON-NLS-1$
 
 	// The shared instance
 	private static CommandHereActivator plugin;
